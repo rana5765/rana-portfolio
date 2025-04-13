@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+    <title>Rana Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icob/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="icon/png" sizes="32x32" href="images/favicon-32x32.png">
+    
+
+    
+  
+  <link rel="stylesheet" href="style.css">
+
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</head>
+
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    
+  <div class="logo">
+    <img src="Image/logo.png" alt="Your Website Logo">
+  </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="menu-icon" id="menu-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+  <button class="toggle-btn" onclick="toggleMode()">Toggle Dark Mode</button>
+
+  <!--hero-->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <div class="text-area">
+        <h1 class="greeting">Hey there! 👋 I'm</h1>
+        <h2 class="name"><span class="typewriter"></span></h2>
+        <p class="role">Web Developer & AI Enthusiast</p>
+        <p class="description">
+          I design clean, user-friendly web apps and explore the world of machine learning.
+          I love solving real-world problems with code.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn primary">Hire Me</a>
+          <a href="Masud_Rana_CV.pdf" class="btn outline" download>Download CV</a>
+        </div>
+      </div>
+      <div class="image-area">
+        <img src="Image/hero-pic.jpg" alt="Md. Masud Rana" class="hero-image tilt" />
+      </div>
+    </div>
+  
+    <div class="floating-icons">
+      <div class="icon" style="top: 20%; left: 5%; animation: float 3s ease-in-out infinite;"></div>
+      <div class="icon" style="top: 40%; right: 10%; animation: float 4s ease-in-out infinite;"></div>
+    </div>
+  </section>
+  <!--hero end-->
+
+  
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="Image/your-image.jpg" alt="Masud Rana">
+      </div>
+      <div class="about-content">
+        <h2>Hi, I’m <span class="highlight">Md. Masud Rana</span></h2>
+        <p class="about-title">A Passionate <span>Web Developer</span> & <span>Machine Learning Enthusiast</span></p>
+        <p class="about-description">
+          I love turning ideas into reality using clean code and intelligent systems. With experience in web technologies,
+          backend development, and data-driven solutions — I’m always eager to learn and collaborate on meaningful projects.
+        </p>
+        <div class="about-buttons">
+          <a href="#contact" class="btn">Hire Me</a>
+          <a href="cv.pdf" class="btn-outline" target="_blank">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!--Skill-->
+<!-- Skills Section with Progress Bars -->
+<section id="skills">
+  <div class="skills-container">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-list">
+      
+      <!-- Web Development Skill -->
+      <div class="skill-item">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>HTML5, CSS3, JavaScript, React.js, Node.js</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%;"></div>
+        </div>
+      </div>
+      
+      <!-- Backend Development Skill -->
+      <div class="skill-item">
+        <i class="fas fa-server"></i>
+        <h3>Backend Development</h3>
+        <p>Node.js, Express, Flask, MongoDB, PostgreSQL</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%;"></div>
+        </div>
+      </div>
+      
+      <!-- Machine Learning Skill -->
+      <div class="skill-item">
+        <i class="fas fa-puzzle-piece"></i>
+        <h3>Machine Learning</h3>
+        <p>scikit-learn, pandas, TensorFlow, Keras</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%;"></div>
+        </div>
+      </div>
+      
+      <!-- Programming Languages Skill -->
+      <div class="skill-item">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Programming Languages</h3>
+        <p>Python, JavaScript, C++, Java</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 95%;"></div>
+        </div>
+      </div>
+      
+      <!-- Mobile Development Skill -->
+      <div class="skill-item">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Mobile Development</h3>
+        <p>React Native, Android, Flutter</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 75%;"></div>
+        </div>
+      </div>
+      
+      <!-- Cloud & DevOps Skill -->
+      <div class="skill-item">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud & DevOps</h3>
+        <p>AWS, Docker, Kubernetes, CI/CD</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 70%;"></div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!--skill end-->
+
+
+<!--My work-->
+ <!-- My Work Section -->
+<section id="my-work">
+  <div class="work-container">
+    <h2 class="section-title">🛠️ My Work</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="image/project1.jpg" alt="Project 1">
+        <div class="project-info">
+          <h3>Currency Converter App</h3>
+          <p>A simple and modern currency converter with live rates and AdMob ads.</p>
+          <a href="#" target="_blank" class="btn-view">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="Image/AI Study Assistant.png" alt="Project 2">
+        <div class="project-info">
+          <h3>AI Study Assistant</h3>
+          <p>An AI chatbot for students to get notes, answers, and explanations using ChatGPT API.</p>
+          <a href="#" target="_blank" class="btn-view">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="Image/project3.jpg" alt="Project 3">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Personal portfolio built using HTML, CSS, and JavaScript with animation and responsiveness.</p>
+          <a href="#" target="_blank" class="btn-view">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--My work end-->
+
+<!-- Testimonials -->
+<section id="testimonials">
+  <div class="testimonials-container">
+    <h2 class="section-title">What Clients Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Rana is an exceptional developer! He built our website exactly how we imagined — fast, modern, and secure."</p>
+        <div class="client-info">
+          <img src="Image/client1.jpg" alt="Client Photo">
+          <div>
+            <h4>Sarah Khan</h4>
+            <small>CEO, Digital Spark</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">"We hired him for a machine learning project — and the results were just incredible. Highly recommend him!"</p>
+        <div class="client-info">
+          <img src="Image/client2.jpg" alt="Client Photo">
+          <div>
+            <h4>John Smith</h4>
+            <small>Data Scientist, TechNova</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Rana is very professional and creative. He understood my ideas and turned them into a beautiful app."</p>
+        <div class="client-info">
+          <img src="Image/client3.jpg" alt="Client Photo">
+          <div>
+            <h4>Fatima Akter</h4>
+            <small>Entrepreneur</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Testimonials Section Ends-->
+
+
+
+
+
+<!--Subscribe to newsletter-->
+<!-- Newsletter -->
+<section id="newsletter">
+  <div class="newsletter-container">
+    <h2 class="newsletter-title">Stay Updated</h2>
+    <p class="newsletter-text">Subscribe to get the latest updates on projects, blogs & more!</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+<!--End of Newsletter-->
+
+<!--Contact me-->
+
+<!-- Contact Me -->
+<section id="contact">
+  <div class="contact-container">
+    <h2 class="contact-title">Get In Touch</h2>
+    <p class="contact-subtitle">Have a question or want to work together?</p>
+    
+    <div class="contact-wrapper">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-envelope"></i> rana1815767008@gmail.com</p>
+        <p><i class="fas fa-phone-alt"></i> +8801821482687</p>
+        <p><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
+        <div class="contact-social">
+          <a href="https://www.facebook.com/paki2004"><i class="fab fa-facebook"> </i></a>
+          <a href="https://www.linkedin.com/in/rana-sikdar-603ab7329/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/rana5765"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Contact me end-->
+
+
+
+<section id="hobbies">
+  <div class="hobbies-container">
+    <h2 class="section-title">Hobbies & Interests</h2>
+    <div class="hobby-grid">
+      <div class="hobby-card">
+        <i class="fas fa-music"></i>
+        <h3>Listening to Music</h3>
+      </div>
+      <div class="hobby-card">
+        <i class="fas fa-film"></i>
+        <h3>Watching Movies</h3>
+      </div>
+      <div class="hobby-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Drawing & Designing</h3>
+      </div>
+      <div class="hobby-card">
+        <i class="fas fa-mountain"></i>
+        <h3>Adventure & Travel</h3>
+      </div>
+      <div class="hobby-card">
+        <i class="fas fa-pen-nib"></i>
+        <h3>Creative Writing</h3>
+      </div>
+      <div class="hobby-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Learning Tech & AI</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>
+<div id="tsparticles"></div>
+
+
+<!--Footer-->
+<footer id="footer">
+  <div class="footer-container">
+    <div class="footer-column brand">
+      <h2>Masud Rana</h2>
+      <p>Passionate Developer & AI Explorer. Let's innovate together!</p>
+    </div>
+
+    <div class="footer-column links">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column newsletter">
+      <h3>Subscribe</h3>
+      <p>Get updates directly in your inbox.</p>
+      <form>
+        <input type="email" placeholder="Your Email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-column social">
+      <h3>Follow Me</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Masud Rana. Designed with ❤️ by Rana.</p>
+  </div>
+</footer>
+
+
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
+</body>
+</html>
